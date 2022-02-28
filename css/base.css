@@ -1,0 +1,172 @@
+/* Yumicode 2022*/
+
+/***********/
+/* ASSETS */
+/***********/
+
+/* FONT */
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+/* Sacramento */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* Poiret One */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+:root {
+    --color-bg: #F0FFC2;
+    --black: #000;
+    --white: #fff;
+    --grey: #F7F7F7;
+    --dark-grey: rgb(146, 146, 146);
+    --clear-pink: #FFBBBB;
+    --clear-blue: #BFFFF0;
+    --peach: #FFE4C0;
+    --creamy: #fafcef;
+    --font-poiret: 'Poiret One', sans-serif;
+    --font-sacramento: 'Sacramento', sans-serif;
+}
+
+/***********/
+/* BASE */
+/***********/
+
+a {
+    /* font-style */
+    text-decoration: none;
+    color: var(--black);
+}
+
+#base {
+    /* font-style */
+    font-family: var(--font-poiret);
+    /* display */
+    width: 90%;
+    background-color: var(--color-bg);
+    /* box-model */
+    margin: auto;
+    padding: 2em 0 3em;
+}
+
+/***********/
+/* HEADER */
+/***********/
+
+.home {
+    /* font-style */
+    text-decoration: none;
+    color: var(--black);
+}
+
+.home:hover {
+    /* font-style */
+    color: var(--clear-pink);
+}
+
+.title-base {
+    /* display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /**/
+    height: 15em;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    /* box-model */
+    margin: 0 1em;
+}
+
+.how-to {
+    /* font-style */
+    font-size: 5em;
+}
+
+.subtitle {
+    /* font-style */
+    font-family: var(--font-sacramento);
+    font-size: 2em;
+    /* box-model */
+    margin-top: 1em;
+}
+
+/***********/
+/* MAIN */
+/***********/
+
+.items {
+    /* display */
+    background-color: var(--color-bg);
+}
+
+.up-btn, .welcome-page {
+    /* display */
+    width: 2em;
+    position: fixed;
+    right: 2em;
+    bottom: 1em;
+    z-index: 10;
+}
+
+.welcome-page {
+    /* font-style */
+    font-weight: 600;
+    /* display */
+    width: 7em;
+    /**/
+    left: 2em;
+    bottom: 1em;
+    border: 0.5px solid var(--black);
+    /* box-model */
+    padding : 0.5em 0 0.5em 0.5em;
+}
+
+@media only screen and (max-width: 520px)
+{
+    .welcome-page {
+        /* display */
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 2.25em;
+        height: 1em;
+        /* box-model */
+        margin: 0 auto;  
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+}
+
+/***********/
+/* FOOTER */
+/***********/
+#footer {
+    position: fixed;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.project-github {
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    /* box-model */
+    padding: 0.5em 0 0.5em;
+}
+
+.github-txt {
+    /* font-style */
+    font-family: var(--font-poiret);
+    /* box-model */
+    padding-right: 1em;
+}
+
+.github-img {
+    /* display */
+    width: 2em;
+}

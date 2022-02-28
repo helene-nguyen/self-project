@@ -1,0 +1,110 @@
+/*YumiCode 2022 Training*/
+
+/**********/
+/* MAIN */
+/**********/
+
+* {
+    font-family: var(--font-poiret);
+}
+
+body {
+    background-color: var(--creamy);
+}
+
+/**************/
+/*** HEADER ***/
+/*************/
+
+#header {
+    /* display */
+    background-color: var(--color-bg);
+    height: 35em;
+    display: flex;
+    justify-content: center;
+    /**** transition hover base ****/
+    background-image: linear-gradient(var(--clear-blue), var(--clear-blue));
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 200ms;
+    /* box-model */
+    margin-top: 10em;
+}
+
+#header:hover {
+    /* display */
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+.title {
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 2em;
+}
+
+.timeto-title {
+    /* font-style */
+    font-family: var(--font-sacramento);
+    font-size: 3.5em;
+}
+
+.sub-title {
+    /* font-style */
+    font-family: var(--font-poiret);
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+.myself {
+    /* font-style */
+    font-family: var(--font-sacramento);
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--black);
+    /* box-model */
+    padding-top: 0.5em;
+}
+
+.sub-title:hover {
+    /* font-style */
+    color: var(--clear-pink);
+}
+
+/**************/
+/*** MAIN ***/
+/*************/
+
+button {
+    /* display */
+    display: block;
+    border-color: var(--color-bg);
+    background-color: var(--white);
+    position: relative;
+    top: 5em;
+    /* box-model */
+    margin: 1em auto 1em; 
+    padding: 1em;
+}
+
+.btn {
+    /* font-style */
+    color: var(--black);
+    font-size: 2.5em;
+    text-decoration: none;
+    /* box-model */
+    padding: 1em;
+    
+}
+
+button:hover {
+    /* display */
+    background-color: var(--peach);
+    transition: 500ms;
+}
+

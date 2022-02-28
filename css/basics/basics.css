@@ -1,0 +1,27 @@
+/* MAIN SELECTOR */
+
+a {
+    /* font-style */
+    text-decoration: none;
+}
+
+/***********/
+/* MAIN */
+/***********/
+
+.container {
+    /* display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* box-model */
+    margin-top: 2em;
+}
+
+/* HTML BLOC */
+#html-bloc {
+    /* display */
+    border: 1px ridge var(--dark-grey);
+    height: 20rem;
+    width: 90%;
+}
