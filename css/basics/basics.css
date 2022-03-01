@@ -70,3 +70,13 @@ a {
     margin: 1em 0 0 1em;
     padding: 0.5em 0 0.5em 0.5em;
 }
+
+.demo {
+    /* display */
+    height: 8em;
+    width: 95%;
+    background-color: var(--creamy);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* box-model */
+    margin: 1em auto;
+}

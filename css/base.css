@@ -169,4 +169,6 @@ a {
 .github-img {
     /* display */
     width: 2em;
+    /* box-model */
+    margin: 0 auto;
 }
