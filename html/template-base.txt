@@ -40,6 +40,9 @@ Flat icon 64px for cards
 
             <!-- UP BUTTON -->
             <a href="#base"><img class="up-btn" src="../../images/up-arrow.png" alt="up btn"></a>
+
+            <!-- WELCOME PAGE BUTTON -->
+            <a href="../../index.html" class="welcome-page">Welcome Page</a>
             
         </main>
         

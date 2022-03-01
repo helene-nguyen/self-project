@@ -11,9 +11,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 /* Poiret One */
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/* Roboto mMono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 
 
 :root {
+    /* color */
     --color-bg: #F0FFC2;
     --black: #000;
     --white: #fff;
@@ -23,9 +27,17 @@
     --clear-blue: #BFFFF0;
     --peach: #FFE4C0;
     --creamy: #fafcef;
+    /* font */
     --font-poiret: 'Poiret One', sans-serif;
     --font-sacramento: 'Sacramento', sans-serif;
+<<<<<<< HEAD
     --demo-btn:  rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+=======
+    --font-roboto-mono: 'Roboto Mono', monospace, sans-serif;
+    /* shadow */
+    --shadow-demo: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --shadow-demo-box: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+>>>>>>> basics
 }
 
 /***********/
@@ -57,11 +69,13 @@ a {
     /* font-style */
     text-decoration: none;
     color: var(--black);
+    transition: 0.3s;
 }
 
 .home:hover {
     /* font-style */
     color: var(--clear-pink);
+    transition: 0.3s;
 }
 
 .title-base {
