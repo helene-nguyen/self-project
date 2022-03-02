@@ -21,8 +21,6 @@ a {
     background-image: linear-gradient(to bottom, var(--white), var(--peach));
     color: var(--clear-pink);
     /**/
-    border: 0 solid var(--grey);
-    border-radius: .5rem;
     box-sizing: border-box;
     cursor: pointer;
     /**/
@@ -31,6 +29,8 @@ a {
     outline: 2px solid transparent;
     box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
     /* box-model */
+    border: 0 solid var(--grey);
+    border-radius: .5rem;
     margin: 2em auto 0.5em;
     padding: 1rem 1.5rem;
 
@@ -78,6 +78,22 @@ a {
 /*****************/
 
 .div-bloc {
+    /* display */
+    /* box-model */
     border: 1px solid var(--black);
     margin: 0 2em;
+    padding: 1em 2em;
+}
+
+.div-bloc-txt {
+    /* display */
+    line-height: 1.5em;
+}
+
+.div-bloc-txt-span {
+    /* font-style */
+    color: var(--creamy);
+    /* display */
+    background-color: var(--black);
+
 }
