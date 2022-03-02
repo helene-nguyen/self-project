@@ -9,94 +9,6 @@ a {
 /* MAIN */
 /***********/
 
-.container {
-    /* display */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* box-model */
-    margin-top: 2em;
-}
-
-/***************************/
-/* DESIGN DEMO BTN + BLOC */
-/*************************/
-
-#html-bloc,
-#css-bloc {
-    /* display */
-    border: 1px ridge var(--dark-grey);
-    width: 90%;
-    /* box-model */
-    margin-bottom: 1em;
-}
-
-.html-bloc,
-.css-bloc {
-    /* display */
-    background-color: var(--creamy);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    border-bottom: 1px solid var(--dark-grey);
-    /* box-model */
-
-}
-
-.html-bloc-title,
-.css-bloc-title {
-    /* font-style */
-    font-size: 2em;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: underline;
-    /* box-model */
-    margin: 0 auto;
-    padding: 0.5em 0;
-}
-
-.html-bloc-txt,
-.css-bloc-txt {
-    /* font-style */
-    font-weight: 600;
-    /* display */
-    /* box-model */
-    margin: 0 auto;
-    padding-bottom: 1em;
-
-}
-
-.html-demo-title,
-.css-demo-title {
-    /* font-style */
-    font-weight: 600;
-    /* display */
-    width: 3em;
-    border: 1px solid;
-    box-shadow: var(--shadow-demo);
-    /* box-model */
-    margin: 1em 0 0 1em;
-    padding: 0.5em 0 0.5em 0.5em;
-}
-
-.demo {
-    /* font-style */
-    font-family: var(--font-roboto-mono);
-    font-weight: 400;
-    /* display */
-    width: 95%;
-    background-color: var(--creamy);
-    box-shadow: var(--shadow-demo-box);
-    /* box-model */
-    margin: 1em auto;
-}
-
-.demo-inside {
-    padding: 1em 2em;
-
-}
-
 /****BUTTON****/
 /* Found btn on https://getcssscan.com/css-buttons-examples */
 .btn {
@@ -143,15 +55,29 @@ a {
 
 /* Yea I know, I cheated, no CSS for this part, it's the rule ... But it's better like this*/
 .demo-h1 {
+    /* font-style */
     font-size: 2em;
 }
 
-.input-type, .password-type {
+.input-type,
+.password-type {
+    /* display */
     display: flex;
+    /* box-model */
     margin: 1em 0;
 }
 
 .password-type {
+    /* display */
     flex-direction: column;
-    
+
+}
+
+/*******************/
+/* CSS BLOC DEMO */
+/*****************/
+
+.div-bloc {
+    border: 1px solid var(--black);
+    margin: 0 2em;
 }

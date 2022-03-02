@@ -22,7 +22,7 @@
     --font-poiret: 'Poiret One', sans-serif;
     --font-sacramento: 'Sacramento', sans-serif;
     --font-roboto-mono: 'Roboto Mono', monospace, sans-serif;
-    --demo-btn:  rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --demo-btn: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 /***********/
@@ -99,7 +99,8 @@ a {
     background-color: var(--color-bg);
 }
 
-.up-btn, .welcome-page {
+.up-btn,
+.welcome-page {
     /* display */
     width: 2em;
     position: fixed;
@@ -118,11 +119,10 @@ a {
     bottom: 1em;
     border: 0.5px solid var(--black);
     /* box-model */
-    padding : 0.5em 0 0.5em 0.5em;
+    padding: 0.5em 0 0.5em 0.5em;
 }
 
-@media only screen and (max-width: 520px)
-{
+@media only screen and (max-width: 520px) {
     .welcome-page {
         /* display */
         position: absolute;
@@ -131,11 +131,95 @@ a {
         top: 2.25em;
         height: 1em;
         /* box-model */
-        margin: 0 auto;  
+        margin: 0 auto;
         padding-left: 20%;
         padding-right: 20%;
     }
-    
+
+}
+
+
+
+/***************************/
+/* DESIGN DEMO BTN + BLOC */
+/*************************/
+.container {
+    /* display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* box-model */
+    margin-top: 2em;
+}
+
+.big-bloc {
+    /* display */
+    border: 1px ridge var(--dark-grey);
+    width: 90%;
+    /* box-model */
+    margin-bottom: 1em;
+}
+
+.big-bloc-header {
+    /* display */
+    background-color: var(--creamy);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom: 1px solid var(--dark-grey);
+    /* box-model */
+
+}
+
+.big-bloc-title {
+    /* font-style */
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+    /* box-model */
+    margin: 0 auto;
+    padding: 0.5em 0;
+}
+
+.big-bloc-txt {
+    /* font-style */
+    font-weight: 600;
+    /* display */
+    /* box-model */
+    margin: 0 auto;
+    padding-bottom: 1em;
+
+}
+
+.bloc-demo-title {
+    /* font-style */
+    font-weight: 600;
+    /* display */
+    width: 3em;
+    border: 1px solid;
+    box-shadow: var(--shadow-demo);
+    /* box-model */
+    margin: 1em 0 0 1em;
+    padding: 0.5em 0 0.5em 0.5em;
+}
+
+.demo {
+    /* font-style */
+    font-family: var(--font-roboto-mono);
+    font-weight: 400;
+    /* display */
+    width: 95%;
+    background-color: var(--creamy);
+    box-shadow: var(--shadow-demo-box);
+    /* box-model */
+    margin: 1em auto;
+}
+
+.demo-inside {
+    padding: 1em 2em;
+
 }
 
 /***********/
