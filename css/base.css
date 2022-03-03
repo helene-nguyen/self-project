@@ -56,7 +56,7 @@ a {
     color: var(--black);
     transition: 0.3s;
     /* box-model */
-    
+
 }
 
 .home:hover {
@@ -101,8 +101,7 @@ a {
     background-color: var(--color-bg);
 }
 
-.up-btn,
-.welcome-page {
+.up-btn {
     /* display */
     width: 2em;
     position: fixed;
@@ -111,17 +110,26 @@ a {
     z-index: 10;
 }
 
-.welcome-page {
+.welcome-return-btn {
+    /* display */
+    display: flex;
+    width: 30%;
+    position: fixed;
+    bottom: 1em;
+    z-index: 10;
+}
+
+.welcome-page-btn, .return-page-btn {
     /* font-style */
     font-weight: 600;
     /* display */
-    width: 7em;
+    text-align: center;
+    width: 50%;
     /**/
-    left: 2em;
-    bottom: 1em;
     border: 0.5px solid var(--black);
     /* box-model */
-    padding: 0.5em 0 0.5em 0.5em;
+    margin-left: 0.5em;
+    padding: 0.5em 0 0.5em;
 }
 
 
@@ -253,17 +261,22 @@ a {
 /************************************/
 
 @media only screen and (max-width: 520px) {
-    .welcome-page {
+    .welcome-return-btn {
         /* display */
         position: absolute;
         right: 0;
         left: 0;
         top: 2.25em;
         height: 1em;
+        width: 75%;
         /* box-model */
-        margin: 0 auto;
-        padding-left: 20%;
-        padding-right: 20%;
+        margin: 0 auto;;
+    }
+
+    .welcome-page-btn, .return-page-btn {
+        /* display */
+        height: 1em;
+        width: 50%;
     }
 
     .how-to {
