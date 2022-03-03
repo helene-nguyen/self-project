@@ -50,11 +50,10 @@ a {
 
 .card-zone {
     /*display*/
-    border: 1px ridge var(--dark-grey);
     border-width: thin;
     height: 27rem;
     width: 15rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
     /* box-model */
     margin-bottom: 1em;
 
@@ -68,7 +67,7 @@ a {
     /**/
     position: relative;
     display: flex;
-    /* !!!Centrer horizontalement et verticalement dans cet ordre là*/
+    /* !!!Centrer horizontalement et verticalement*/
     justify-content: center;
     align-items: center;
     /*box-model*/

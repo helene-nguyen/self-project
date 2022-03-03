@@ -9,46 +9,6 @@ a {
 /* MAIN */
 /***********/
 
-/****BUTTON****/
-/* Found btn on https://getcssscan.com/css-buttons-examples */
-.btn {
-    /* font-style */
-    font-family: var(--font-roboto-mono);
-    font-size: 100%;
-    font-weight: 700;
-    /* display */
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, var(--white), var(--peach));
-    color: var(--clear-pink);
-    /**/
-    box-sizing: border-box;
-    cursor: pointer;
-    /**/
-    display: flex;
-    text-align: center;
-    outline: 2px solid transparent;
-    box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
-    /* box-model */
-    border: 0 solid var(--grey);
-    border-radius: .5rem;
-    margin: 2em auto 0.5em;
-    padding: 1rem 1.5rem;
-
-}
-
-.btn:active {
-    /* display */
-    background-color: var(--creamy);
-    box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15), 0px 1px 1px rgba(81, 41, 10, 0.15);
-    transform: translateY(0.125rem);
-}
-
-.btn:hover {
-    /* display */
-    background-image: linear-gradient(to bottom, var(--white), var(--color-bg));
-}
-
-
 /*******************/
 /* HTML BLOC DEMO */
 /*****************/
