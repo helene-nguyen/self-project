@@ -15,6 +15,7 @@
     --clear-blue: #BFFFF0;
     --peach: #FFE4C0;
     --creamy: #fafcef;
+    --opacity: rgba(0, 0, 0, 0.25);
     /* box-shadow */
     --bloc-box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
     /* font */
@@ -54,6 +55,8 @@ a {
     text-decoration: none;
     color: var(--black);
     transition: 0.3s;
+    /* box-model */
+    
 }
 
 .home:hover {
@@ -163,6 +166,8 @@ a {
     font-weight: 900;
     text-transform: uppercase;
     text-decoration: underline;
+    /* display */
+    text-align: center;
     /* box-model */
     margin: 0 auto;
     padding: 0.5em 0;
@@ -172,6 +177,7 @@ a {
     /* font-style */
     font-weight: 600;
     /* display */
+    text-align: center;
     /* box-model */
     margin: 0 auto;
     padding-bottom: 1em;
@@ -184,7 +190,7 @@ a {
     /* display */
     width: 3em;
     border: 1px solid;
-    box-shadow: var(--shadow-demo);
+    box-shadow: var(--bloc-box-shadow);
     /* box-model */
     margin: 1em 0 0 1em;
     padding: 0.5em 0 0.5em 0.5em;
@@ -197,7 +203,7 @@ a {
     /* display */
     width: 95%;
     background-color: var(--creamy);
-    box-shadow: var(--shadow-demo-box);
+    box-shadow: var(--bloc-box-shadow);
     /* box-model */
     margin: 1em auto;
 }
@@ -260,4 +266,11 @@ a {
         padding-right: 20%;
     }
 
+    .how-to {
+        margin-top: 0.7em;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
 }

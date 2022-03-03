@@ -70,7 +70,6 @@ a {
 .password-type {
     /* display */
     flex-direction: column;
-
 }
 
 /*******************/
@@ -95,5 +94,66 @@ a {
     color: var(--creamy);
     /* display */
     background-color: var(--black);
+}
 
+.div-bloc-img {
+    /* display */
+    width: 15em;
+    height: 10em;
+    resize: both;
+    overflow: hidden;
+    position: relative;
+    /*I have to put position here for my children to be positionned*/
+    /* box-model */
+    border: 1px solid var(--black);
+    margin: 1em auto;
+}
+
+.div-resize-txt {
+    /* font-style */
+    color: var(--creamy);
+    font-family: var(--font-poiret);
+    font-size: 2em;
+    font-weight: bold;
+    /* display */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /**/
+    position: absolute;
+    top: 15%;
+    /**/
+    background-color: var(--opacity);
+    text-align: center;
+    z-index: 1;
+    /* box-model */
+    padding: 0.5em 0;
+
+}
+
+.div-resize-txt:hover {
+    /* display */
+    background-color: transparent;
+}
+
+.div-bloc-img-inside {
+    /* display */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.resize-corner {
+    /* font-style */
+    font-size: 0.5em;
+    font-weight: 200;
+}
+
+
+/*******************/
+/* MEDIA QUERIES */
+/*****************/
+@media only screen and (max-width: 520px) {
+    .demo-inside {
+        padding: 0.5em 0;
+    }
 }
