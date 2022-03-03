@@ -18,6 +18,7 @@ h3.big-bloc-txt {
 }
 
 .box-model-title {
+    /* display */
     /* box-model */
     margin: 1em 0 2em;
 }
@@ -31,8 +32,8 @@ h3.big-bloc-txt {
 
 .box-margin {
     /* display */
-    height: 20em;
-    width: 50%;
+    height: 15em;
+    width: 30%;
     background-color: var(--clear-pink);
     display: flex;
     justify-content: center;
@@ -43,33 +44,66 @@ h3.big-bloc-txt {
     position: relative;
     /* box-model */
     margin: 0.5em auto;
+    padding: 0 0.5em;
     box-shadow: var(--bloc-box-shadow);
+}
+
+.box-margin-txt {
+    /* font-style */
+    font-weight: 600;
+    text-transform: uppercase;
+    /* display */
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
 }
 
 .box-border {
     /* display */
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 75%;
     background-color: var(--black);
     /**/
     display: flex;
     justify-content: center;
     align-items: center;
+    /**/
+    position: relative;
     /* box-model */
     box-shadow: var(--bloc-box-shadow);
 }
 
+.box-border-txt {
+    /* font-style */
+    color: var(--white);
+    font-size: 0.65em;
+    /* display */
+    position: absolute;
+    top: 0.25em;
+}
+
 .box-padding {
     /* display */
-    height: 85%;
-    width: 85%;
+    height: 80%;
+    width: 80%;
     background-color: var(--clear-blue);
     /**/
     display: flex;
     justify-content: center;
     align-items: center;
+    /**/
+    position: relative;
     /* box-model */
     box-shadow: var(--bloc-box-shadow);
+}
+
+.box-padding-txt {
+    /* font-style */
+    font-size: 0.85em;
+    /* display */
+    position: absolute;
+    top: 0.65em;
+    left: 0.65em;
 }
 
 .box-content {
@@ -78,13 +112,29 @@ h3.big-bloc-txt {
     width: 75%;
     background-color: var(--dark-grey);
     /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* box-model */
     box-shadow: var(--bloc-box-shadow);
 }
 
+.box-content-txt {
+    /* font-style */
+    font-size: 1em;
+}
+
+.box-content-txt,
+.box-padding-txt,
+.box-border-txt {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 .box-click-here {
     position: absolute;
-
+    bottom: 2%;
+    right: 2%;
 }
 
 /******************/
@@ -92,5 +142,11 @@ h3.big-bloc-txt {
 /****************/
 
 @media only screen and (max-width: 520px) {
-    .box-margin {}
+    .all-boxes {
+        flex-direction: column;
+    }
+
+    .box-margin {
+        width: 100%;
+    }
 }
