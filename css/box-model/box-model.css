@@ -1,0 +1,96 @@
+/* Yumicode BIG PROJECT 2022*/
+
+/* MAIN SELECTOR */
+
+/***********/
+/* MAIN */
+/***********/
+
+h3.big-bloc-txt {
+    /* font-style */
+    font-size: 1.5em;
+    /* display */
+    background-color: var(--peach);
+    line-height: 1.5em;
+    text-align: center;
+    /* box-model */
+    margin-bottom: 1em;
+}
+
+.box-model-title {
+    /* box-model */
+    margin: 1em 0 2em;
+}
+
+.all-boxes {
+    /* display */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-margin {
+    /* display */
+    height: 20em;
+    width: 50%;
+    background-color: var(--clear-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    resize: both;
+    overflow: hidden;
+    position: relative;
+    /* box-model */
+    margin: 0.5em auto;
+    box-shadow: var(--bloc-box-shadow);
+}
+
+.box-border {
+    /* display */
+    height: 80%;
+    width: 80%;
+    background-color: var(--black);
+    /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-model */
+    box-shadow: var(--bloc-box-shadow);
+}
+
+.box-padding {
+    /* display */
+    height: 85%;
+    width: 85%;
+    background-color: var(--clear-blue);
+    /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-model */
+    box-shadow: var(--bloc-box-shadow);
+}
+
+.box-content {
+    /* display */
+    height: 50%;
+    width: 75%;
+    background-color: var(--dark-grey);
+    /**/
+    /* box-model */
+    box-shadow: var(--bloc-box-shadow);
+}
+
+.box-click-here {
+    position: absolute;
+
+}
+
+/******************/
+/* MEDIA QUERIES */
+/****************/
+
+@media only screen and (max-width: 520px) {
+    .box-margin {}
+}

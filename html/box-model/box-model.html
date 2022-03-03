@@ -43,9 +43,51 @@
         <!-- MAIN -->
         <main>
 
-            <section>
+            <div class="container">
+                <section class="big-bloc">
+                    <header class="big-bloc-header">
+                        <h3 class="big-bloc-title">Understand box-model</h3>
+                        <p class="big-bloc-txt">What is box-model ? You know, when you create a tag, it's an element.
+                            Each element become a box. And this box have 4 main properties that you can modify.
+                        </p>
+                        <p class="big-bloc-txt">If you create another box in the first box, the second one become a
+                            child and the first one is his parent.</p>
+                        <p class="big-bloc-txt">And if you create another box inside the second box, this one is the
+                            grand-child of the first one you have created. Isn't that magic ?</p>
+                        <p class="big-bloc-txt">There is something you must keep in your mind :</p>
+                        <h3 class="big-bloc-txt">Everything in your whole webpage is a bunch of boxes that you can move,
+                            styling, sizing.</h3>
+                    </header>
+                    <div class="bloc-demo">
+                        <h3 class="bloc-demo-title">Demo</h3>
+                        <div class="demo">
+                            <div class="demo-inside">
+                                <h3 class="box-model-title">See bellow simple boxes :</h3>
+                                <div class="all-boxes">
+                                    <!-- boxes -->
+                                    <div class="box-margin">
+                                        <p class="box-click-here">Resize here &#8600;</p>
+                                        <div class="box-border">
+                                            <div class="box-padding">
+                                                <div class="box-content"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-margin">
+                                        <div class="box-border">
+                                            <div class="box-padding">
+                                                <div class="box-content"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
 
             <!-- UP BUTTON -->
             <a href="#base"><img class="up-btn" src="../../images/up-arrow.png" alt="up btn"></a>

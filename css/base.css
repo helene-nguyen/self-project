@@ -1,4 +1,4 @@
-/* Yumicode 2022*/
+/* Yumicode BIG PROJECT 2022*/
 
 /***********/
 /* ASSETS */
@@ -185,10 +185,10 @@ a {
     /* font-style */
     font-weight: 600;
     /* display */
-    text-align: center;
+    text-align: justify;
     /* box-model */
     margin: 0 auto;
-    padding-bottom: 1em;
+    padding: 1em 7em;
 
 }
 
@@ -324,5 +324,9 @@ a {
 
     .subtitle {
         text-align: center;
+    }
+
+    .big-bloc-txt {
+        padding: 1em 1.5em;
     }
 }
