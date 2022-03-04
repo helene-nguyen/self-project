@@ -6,15 +6,8 @@
 /* MAIN */
 /***********/
 
-/***************Display bloc**************/
-.display {
-    /* display */
-    width: 90%;
-    /* box-model */
-    box-shadow: var(--bloc-box-shadow);
-    margin: 2em auto 1em;
-    padding-bottom: 1em;
-}
+/***************Display block**************/
+
 
 .display-txt {
     /* font-style */

@@ -2,3 +2,44 @@
 /* MAIN */
 /***********/
 
+.display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox-block-1,
+.flexbox-block-2,
+.flexbox-block-3,
+.flexbox-block-4,
+.flexbox-block-5,
+.flexbox-block-6 {
+    /* display */
+    width: 100%;
+    height: 20rem;
+    border: 2px solid var(--black);
+}
+
+.flexbox-block-1 {
+
+}
+
+.flexbox-block-2 {
+
+}
+
+.flexbox-block-3 {
+
+}
+
+.flexbox-block-4 {
+
+}
+
+.flexbox-block-5 {
+
+}
+
+.flexbox-block-6 {
+
+}
+

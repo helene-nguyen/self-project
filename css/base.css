@@ -220,6 +220,15 @@ a {
 
 }
 
+.display {
+    /* display */
+    width: 90%;
+    /* box-model */
+    box-shadow: var(--bloc-box-shadow);
+    margin: 2em auto 1em;
+    padding-bottom: 1em;
+}
+
 /****BUTTON****/
 /* Found btn on https://getcssscan.com/css-buttons-examples */
 .btn-project {
