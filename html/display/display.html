@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Items</title>
+    <title>Display</title>
 
     <!-- ICON -->
     <link rel="icon" href="../images/favicon.ico">
@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap">
 
+    <!-- JAVASCRIPT -->
+    <script async src="../../js/display.js"></script>
 </head>
 
 <body>
@@ -44,22 +46,40 @@
         <main>
             <div class="container">
                 <section class="big-bloc">
-                         <header class="big-bloc-header">
-                             <h3 class="big-bloc-title">TITLE</h3>
-                             <p class="big-bloc-txt">Description
-                             </p>
-                         </header>
-                         <div class="bloc-demo">
-                             <h3 class="bloc-demo-title">Demo</h3>
-                             <div class="demo">
-                                 <div class="demo-inside">
-                                     
-                                 </div>
-                             </div>
-                         </div>
-                     </section>
-                     
-                 </div>
+                    <header class="big-bloc-header">
+                        <h3 class="big-bloc-title">Display or not display ?</h3>
+                        <p class="big-bloc-txt">The display is a property that specifies the display behavior of an
+                            element. It means that it tells you if the "box" takes all of the width of the line or not,
+                            if we can change the value of height and width or not.
+                        </p>
+                    </header>
+                    <div class="bloc-demo">
+                        <h3 class="bloc-demo-title">Demo</h3>
+                        <div class="demo">
+                            <div class="demo-inside">
+                                <h3 class="display-block-title">You will see below the behavior of each element :</h3>
+                                <div class="display-block">
+                                    <p class="display-block-txt display-sub">Display : BLOCK</p>
+                                    <p class="display-block-txt">All elements are blocked by default. It means that when you create a tag in your HTML, everything will be one above the other like blocks that we stack.</p>
+                                    <div class="display-block-demo block-1">
+                                        <p class="display-block-txt">Take all of the width of the parent element</p>
+                                    </div>
+                                    <div class="display-block-demo block-2">
+                                        <p class="display-block-txt">CAN changes the size BUT still blocks any other element on the same line</p>
+                                    </div>
+                                    <div class="display-block-demo block-3">
+                                        <p class="display-block-txt">Still blocks any other element on the same line AND can align it anywhere in horizontal</p>
+                                    </div>
+                                </div>
+                                <div class="display-inline"></div>
+                                <div class="display-inline-block"></div>
+                                <div class="display-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
 
             <!-- UP BUTTON -->
             <a href="#base"><img class="up-btn" src="../../images/up-arrow.png" alt="up btn"></a>

@@ -5,3 +5,52 @@
 /***********/
 /* MAIN */
 /***********/
+
+/***************Display bloc**************/
+.display-block {
+    /* display */
+    width: 90%;
+    /* box-model */
+    box-shadow: var(--bloc-box-shadow);
+    margin: 2em auto 1em;
+    padding-bottom: 1em;
+}
+
+.display-block-txt {
+    /* box-model */
+    padding: 1em 2em;
+}
+
+.display-sub {
+    /* display */
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/*Here we have a display block by default, I didn't precise display: block;*/
+.display-block-demo {
+    /* display */
+    background-color: var(--clear-pink);
+    /* box-model */
+    border: 1px solid var(--dark-grey);
+    margin-bottom: 1em;
+}
+
+.block-2 {
+    /* display */
+    width: 50%;
+}
+
+.block-3 {
+    /* display */
+    width: 70%;
+    /* box-model */
+    margin: 0 auto;
+
+}
+
+/***************Display inline**************/
+
+/***************Display inline-block**************/
+
+/***************Display none**************/
