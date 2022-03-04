@@ -9,7 +9,7 @@
     <title>Display</title>
 
     <!-- ICON -->
-    <link rel="icon" href="../images/favicon.ico">
+    <link rel="icon" href="../../images/favicon.ico">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/display/display.css">
@@ -57,23 +57,94 @@
                         <h3 class="bloc-demo-title">Demo</h3>
                         <div class="demo">
                             <div class="demo-inside">
-                                <h3 class="display-block-title">You will see below the behavior of each element :</h3>
-                                <div class="display-block">
-                                    <p class="display-block-txt display-sub">Display : BLOCK</p>
-                                    <p class="display-block-txt">All elements are blocked by default. It means that when you create a tag in your HTML, everything will be one above the other like blocks that we stack.</p>
+                                <h3 class="display-block-desc">You will see below the behavior of each element :</h3>
+                                <!-- Display Block -->
+                                <div class="display">
+                                    <p class="display-txt display-title">Display : BLOCK</p>
+                                    <p class="display-txt">All elements are blocked by default. It means that when you
+                                        create a tag in your HTML, everything will be one above the other like blocks
+                                        that we stack.</p>
                                     <div class="display-block-demo block-1">
-                                        <p class="display-block-txt">Take all of the width of the parent element</p>
+                                        <p class="display-txt">Take all of the width of the parent element</p>
                                     </div>
                                     <div class="display-block-demo block-2">
-                                        <p class="display-block-txt">CAN changes the size BUT still blocks any other element on the same line</p>
+                                        <p class="display-txt">CAN change the size BUT still blocks any other element on
+                                            the same line</p>
                                     </div>
                                     <div class="display-block-demo block-3">
-                                        <p class="display-block-txt">Still blocks any other element on the same line AND can align it anywhere in horizontal</p>
+                                        <p class="display-txt">Still blocks any other element on the same line AND can
+                                            align it anywhere in horizontal</p>
                                     </div>
                                 </div>
-                                <div class="display-inline"></div>
-                                <div class="display-inline-block"></div>
-                                <div class="display-none"></div>
+                                <!-- Display Inline -->
+                                <div class="display">
+                                    <p class="display-txt display-title">Display : INLINE</p>
+                                    <p class="display-txt">All elements with display inline will take up as mush space
+                                        as needed. You will find elements next to the other. </p>
+                                    <div class="display-block-demo inline-1">
+                                        <p class="display-txt inline-1">CANNOT change the size.</p>
+                                    </div>
+                                    <div class="display-block-demo inline-2">
+                                        <p class="display-inline-txt inline-2">Take a look on DevTools and try to change
+                                            the size, it doesn't work.</p>
+                                    </div>
+                                    <div class="display-block-demo inline-3">
+                                        <p class="display-txt inline-3">Only takes up as much space as it needs to.</p>
+                                    </div>
+                                    <div class="display-block-demo inline-4">
+                                        <p class="display-txt inline-4">Element sit next to the other inline.</p>
+                                    </div>
+                                </div>
+                                <!-- Display Inline-Block -->
+                                <div class="display ib">
+                                    <p class="display-txt display-title">Display : INLINE-BLOCK</p>
+                                    <p class="display-txt">It a mix with display inline and display block. Elements will
+                                        sit next to the other BUT can have padding, margin or height.</p>
+                                    <div class="display-block-demo ib-1">
+                                        <p class="display-txt">CAN ONLY change height, width, padding and margin TOP and
+                                            BOTTOM</p>
+                                    </div>
+                                    <div class="display-block-demo ib-2">
+                                        <p class="display-inline-txt">Element </p>
+                                    </div>
+                                    <div class="display-block-demo ib-3">
+                                        <p class="display-txt">sit next to the other inline.</p>
+                                    </div>
+                                    <div class="display-block-demo ib-4">
+                                        <p class="display-txt">Try to </p>
+                                    </div>
+                                    <div class="display-block-demo ib-5">
+                                        <p class="display-txt">change width.</p>
+                                    </div>
+                                    <div class="display-block-demo ib-6">
+                                        <p class="display-txt">Every boxes just shift</p>
+                                    </div>
+                                </div>
+                                <!-- Display None -->
+                                <div class="display">
+                                    <p class="display-txt display-title">Display : INLINE</p>
+                                    <p class="display-txt">Remove the element as if it didn't exist. </p>
+
+                                    <button id="btn-none">Click here to display none </button>
+                                    <button id="btn-show">Click here to show it again </button>
+
+                                    <div class="btn-clicked">
+                                        <div class="display-block-demo">
+                                            <p class="display-txt">Here some text to fill the box. I hope you enjoy the
+                                                website, I try to make something colorful and fun.</p>
+                                        </div>
+                                        <div class="display-block-demo">
+                                            <p class="display-txt">My favourite text : Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Iusto, labore consequuntur! Officiis
+                                                magnam similique placeat labore quos omnis dolores possimus, molestias
+                                                ipsa fugit dolore eveniet unde, corrupti odio aliquid necessitatibus.
+                                            </p>
+                                        </div>
+                                        <div class="display-block-demo">
+                                            <p class="display-txt">It's a joke :P</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

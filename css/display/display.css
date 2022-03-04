@@ -7,7 +7,7 @@
 /***********/
 
 /***************Display bloc**************/
-.display-block {
+.display {
     /* display */
     width: 90%;
     /* box-model */
@@ -16,12 +16,14 @@
     padding-bottom: 1em;
 }
 
-.display-block-txt {
+.display-txt {
+    /* font-style */
+    line-height: 1em;
     /* box-model */
     padding: 1em 2em;
 }
 
-.display-sub {
+.display-title {
     /* display */
     text-decoration: underline;
     font-weight: 600;
@@ -32,7 +34,7 @@
     /* display */
     background-color: var(--clear-pink);
     /* box-model */
-    border: 1px solid var(--dark-grey);
+    border: 2px solid var(--dark-grey);
     margin-bottom: 1em;
 }
 
@@ -51,6 +53,69 @@
 
 /***************Display inline**************/
 
+.inline-1,
+.inline-2,
+.inline-3,
+.inline-4 {
+    /* display */
+    display: inline;
+    line-height: 2em;
+}
+
 /***************Display inline-block**************/
 
+.ib-1,
+.ib-2,
+.ib-3,
+.ib-4,
+.ib-5,
+.ib-6 {
+    display: inline-block;
+}
+
+.ib-2 {
+    height: 4em;
+}
+
+.ib-3 {
+    margin: 2em 0;
+}
+
+.ib-4 {
+    /* box-model */
+    padding: 4em 0;
+}
+
+.ib-6 {
+    padding: 3em 0;
+}
+
 /***************Display none**************/
+
+#btn-none,
+#btn-show {
+    /* font-style */
+    font-family: var(--font-poiret);
+    font-size: 1.5em;
+    font-weight: 600;
+    /* display */
+    display: block;
+    cursor: pointer;
+    /*btn effect*/
+    transition: all 235ms ease-in-out;
+    /* box-model */
+    border-top: 2px solid var(--dark-grey);
+    border-radius: 15px;
+    box-shadow: var(--bloc-box-shadow);
+    padding: 0.5em;
+    margin: 0 auto 1em;
+}
+
+.btn-none:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.btn-none:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
