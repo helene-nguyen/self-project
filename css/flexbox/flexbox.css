@@ -17,7 +17,6 @@ span {
     /**/
     position: relative;
     /* box-model */
-
 }
 
 .flexbox-title {
@@ -85,4 +84,22 @@ span {
 .flex-direction {
     /* display */
     flex-direction: row-reverse;
+}
+
+/**************************************/
+/* MEDIA QUERIES */
+/************************************/
+
+@media only screen and (max-width: 700px) {
+    .flexbox-block {
+        /* display */
+    width: 3rem;
+    max-width: 3em;
+    height: 3em;
+    margin: 0.5em;
+    }
+
+    .justify-content {
+        justify-content: space-evenly;
+    }
 }

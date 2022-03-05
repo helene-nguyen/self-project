@@ -16,6 +16,7 @@
     --blue-sea: #54BAB9;
     --peach: #FFE4C0;
     --creamy: #fafcef;
+    --purple: #EA99D5;
     --opacity: rgba(0, 0, 0, 0.25);
     /* box-shadow */
     --bloc-box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
@@ -309,7 +310,7 @@ a {
 /* MEDIA QUERIES : mostly at the end */
 /************************************/
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 700px) {
     .welcome-return-btn {
         /* display */
         position: absolute;

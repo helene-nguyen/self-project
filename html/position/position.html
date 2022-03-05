@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Items</title>
+    <title>Position</title>
 
     <!-- ICON -->
-    <link rel="icon" href="../images/favicon.ico">
+    <link rel="icon" href="../../images/favicon.ico">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/position/position.css">
@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap">
 
+    <!-- JAVASCRIPT -->
+    <script async src="../../js/position.js"></script>
+
 </head>
 
 <body>
@@ -35,7 +38,7 @@
         <header>
             <div class="title-base">
                 <h1 class="how-to"><a href="../items.html" class="home">How To</a></h1>
-                <h2 class="subtitle">Take a breath and position</h2>
+                <h2 class="subtitle">Breathe and take a position</h2>
             </div>
 
         </header>
@@ -45,28 +48,59 @@
             <div class="container">
                 <section class="big-bloc">
                     <header class="big-bloc-header">
-                        <h3 class="big-bloc-title">TITLE</h3>
-                        <p class="big-bloc-txt">Description
+                        <h3 class="big-bloc-title">Position property</h3>
+                        <p class="big-bloc-txt">The position property specifies the type of posiitoning method used for
+                            an element.
+                            There are five position values and each elements are then positioned using the top, bottom,
+                            left, and right properties.
+                        </p>
+                        <p class="big-bloc-txt">These properties won't work unless the position property is set first.
+                            Be careful, they worf differently depending on the position value.
                         </p>
                     </header>
                     <div class="bloc-demo">
                         <h3 class="bloc-demo-title">Demo</h3>
                         <div class="demo">
                             <div class="demo-inside">
+                                <h3>You will see below the behavior of my beautiful purple blocks :</h3>
                                 <div class="display">
-                                    <p class="display-txt display-title">Title</p>
-                                    <p class="display-txt">Text</p>
-                                    <div class="display-block-demo">
+                                    <p class="display-txt display-title"></p>
+                                    <p class="display-txt"></p>
+                                    <p class="box-click-here">Resize here &#8600;</p>
+                                    <!-- Button -->
+                                    <div class="btn-all">
+                                        <button class="btn btn-static">static </button>
+                                        <button class="btn btn-relative">relative </button>
+                                        <button class="btn btn-absolute">absolute</button>
+                                        <button class="btn btn-fixed">fixed</button>
+                                        <button class="btn btn-sticky">sticky</button>
+                                    </div>
 
+
+                                    <div class="position-block-demo">
+                                        <div class="position-block"></div>
+                                        <div class="position-block block-positionned"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
+                                        <div class="position-block"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                </section>
+
             </div>
-            </section>
-
-
             <!-- UP BUTTON -->
             <a href="#base"><img class="up-btn" src="../../images/up-arrow.png" alt="up btn"></a>
             <div class="welcome-return-btn">
