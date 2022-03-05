@@ -18,8 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 15em;
-    left: 15em;
+    top: 25em;
+    left: 33em;
     
 }
 
@@ -68,8 +68,9 @@
 
 .display {
     /* display */
+    /* Have to remove it for sticky works
     resize: both;
-    overflow: hidden;
+    overflow: hidden; */
     /**/
     position: relative;
     /* box-model */
