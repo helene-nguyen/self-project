@@ -46,49 +46,184 @@
                 <section class="big-bloc">
                     <header class="big-bloc-header">
                         <h3 class="big-bloc-title">Flexbox</h3>
-                        <p class="big-bloc-txt">What ? Who ? When ? Why ? Flexbox is a magical tool to flex everything for all devices. It is use for responsive design : it will adapt each box to the size of the ancestor element.
+                        <p class="big-bloc-txt">What ? Who ? When ? Why ? Flexbox is a magical tool to flex everything
+                            for all devices. It is use for responsive design : it will adapt each box to the size of the
+                            ancestor element.
+                        </p>
+                        <p class="big-bloc-txt">For element to be flex, you have to write <span>display: flex;</span>
+                            and then, direct children are flex.
+                        </p>
+                        <p class="big-bloc-txt">You can try and flex everything in DevTools, open it with F12, select
+                            the element you want to modify and here we go !
                         </p>
                     </header>
                     <div class="bloc-demo">
                         <h3 class="bloc-demo-title">Demo</h3>
                         <div class="demo">
                             <div class="demo-inside">
-                                <h3>You will see below the behavior of each element :</h3>
+                                <h3>You will see below the behavior of my beautiful blue sea blocks :</h3>
+                                <!-- FLEX-WRAP -->
                                 <div class="display">
-                                    <div class="flexbox-block-1"></div>
-                                    <div class="flexbox-block-2"></div>
-                                    <div class="flexbox-block-3"></div>
-                                    <div class="flexbox-block-4"></div>
-                                    <div class="flexbox-block-5"></div>
-                                    <div class="flexbox-block-6"></div>
+                                    <div class="flexbox-title">
+                                        <p>flex-wrap</p>
+
+                                    </div>
+                                    <p class="box-click-here">Resize here &#8600;</p>
+                                    <!-- Blocks -->
+                                    <div class="flexbox-all flex-wrap">
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">1</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">2</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">3</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">4</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">5</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">6</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">7</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">8</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">9</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- JUSTIFY-CONTENT -->
+                                <div class="display">
+                                    <div class="flexbox-title">
+                                        <p>justify-content</p>
+                                    </div>
+                                    <p class="box-click-here">Resize here &#8600;</p>
+                                    <!-- Blocks -->
+                                    <div class="flexbox-all justify-content">
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">1</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">2</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">3</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">4</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">5</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">6</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">7</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">8</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">9</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ALIGN-ITEMS -->
+                                <div class="display">
+                                    <div class="flexbox-title">
+                                        <p>align-items</p>
+                                    </div>
+                                    <p class="box-click-here">Resize here &#8600;</p>
+                                    <!-- Blocks -->
+                                    <div class="flexbox-all align-items">
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">1</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">2</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">3</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">4</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">5</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- FLEX-DIRECTION -->
+                                <div class="display">
+                                    <div class="flexbox-title">
+                                        <p>flex-direction</p>
+                                        <p>(row-reverse)</p>
+                                    </div>
+                                    <p class="box-click-here">Resize here &#8600;</p>
+                                    <!-- Blocks -->
+                                    <div class="flexbox-all flex-direction">
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">1</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">2</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">3</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">4</p>
+                                        </div>
+                                        <div class="flexbox-block box">
+                                            <p class="box-num">5</p>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
             </div>
+            </section>
+    </div>
 
-            <!-- UP BUTTON -->
-            <a href="#base"><img class="up-btn" src="../../images/up-arrow.png" alt="up btn"></a>
+    <!-- UP BUTTON -->
+    <a href="#base"><img class="up-btn" src="../../images/up-arrow.png" alt="up btn"></a>
 
-            <div class="welcome-return-btn">
-                <!-- WELCOME PAGE BUTTON -->
-                <a href="../../../self-project/index.html" class="welcome-page-btn">Welcome Page</a>
-                <!-- RETURN ITEM BUTTON -->
-                <a href="../items.html" class="return-page-btn">Return items</a>
-            </div>
+    <div class="welcome-return-btn">
+        <!-- WELCOME PAGE BUTTON -->
+        <a href="../../../self-project/index.html" class="welcome-page-btn">Welcome Page</a>
+        <!-- RETURN ITEM BUTTON -->
+        <a href="../items.html" class="return-page-btn">Return items</a>
+    </div>
 
-        </main>
+    </main>
 
-        <!-- FOOTER -->
-        <footer id="footer">
-            <div class="project-github">
-                <p class="github-txt">See my project here </p>
-                <a class="footer-img" href="https://github.com/helene-nguyen">
-                    <img class="github-img" src="../../images/github.png" alt="github-link">
-                </a>
-            </div>
-        </footer>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="project-github">
+            <p class="github-txt">See my project here </p>
+            <a class="footer-img" href="https://github.com/helene-nguyen">
+                <img class="github-img" src="../../images/github.png" alt="github-link">
+            </a>
+        </div>
+    </footer>
     </div>
 </body>
 
