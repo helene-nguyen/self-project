@@ -13,6 +13,9 @@ let btnFixed = document.getElementsByClassName('btn-fixed')[0];
 let btnSticky = document.getElementsByClassName('btn-sticky')[0];
 // Changes
 let staticChanges = document.getElementsByClassName('block-positionned')[0];
+// Media queries
+let mediaQuery = window.matchMedia('only screen and (max-width: 700px)');
+let mediaQueryInitial = window.matchMedia('(min-width: 700px)');
 
 
 // & Create my functions
@@ -25,7 +28,14 @@ function staticProperty() {
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
     // adding text
-    staticChanges.innerHTML = "Hello, I'm static";
+    staticChanges.innerHTML = "Hello! I'm static";
+    // adding media queries
+    if (mediaQuery.matches) {
+        staticChanges.style.fontSize = "0.65em";
+    }
+    else if(mediaQueryInitial) {
+        staticChanges.style.fontSize = "1em";
+    }
     // adding padding
     staticChanges.style.padding = "1em"
     // change the position
@@ -40,9 +50,17 @@ function relativeProperty() {
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
     // adding text
-    staticChanges.innerHTML = "I'm relative";
+    staticChanges.innerHTML = "Hello! I'm relative";
+    // adding media queries
+    if (mediaQuery.matches) {
+        staticChanges.style.fontSize = "0.65em";
+    }
+    else if(mediaQueryInitial) {
+        staticChanges.style.fontSize = "1em";
+    }
     // adding padding
     staticChanges.style.padding = "1em"
+    // change the position
     staticChanges.style.position = "relative";
 }
 
@@ -54,9 +72,17 @@ function absoluteProperty() {
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
     // adding text
-    staticChanges.innerHTML = "I'm absolute";
+    staticChanges.innerHTML = "Hello! I'm absolute";
+    // adding media queries
+    if (mediaQuery.matches) {
+        staticChanges.style.fontSize = "0.65em";
+    }
+    else if(mediaQueryInitial) {
+        staticChanges.style.fontSize = "1em";
+    }
     // adding padding
     staticChanges.style.padding = "1em"
+    // change the position
     staticChanges.style.position = "absolute";
 }
 
@@ -68,9 +94,17 @@ function fixedProperty() {
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
     // adding text
-    staticChanges.innerHTML = "I'm fixed";
+    staticChanges.innerHTML = "Hello! I'm fixed";
+    // adding media queries
+    if (mediaQuery.matches) {
+        staticChanges.style.fontSize = "0.65em";
+    }
+    else if(mediaQueryInitial) {
+        staticChanges.style.fontSize = "1em";
+    }
     // adding padding
     staticChanges.style.padding = "1em"
+    // change the position
     staticChanges.style.position = "fixed";
 }
 
@@ -81,7 +115,18 @@ function stickyProperty() {
     console.log(style.getPropertyValue('--purple'));
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
-    staticChanges.innerHTML = "I'm sticky";
+    // adding text
+    staticChanges.innerHTML = "Hello! I'm sticky";
+    // adding media queries
+    if (mediaQuery.matches) {
+        staticChanges.style.fontSize = "0.65em";
+    }
+    else if(mediaQueryInitial) {
+        staticChanges.style.fontSize = "1em";
+    }
+    // adding padding
+    staticChanges.style.padding = "1em"
+    // change the position
     staticChanges.style.position = "sticky";
 }
 

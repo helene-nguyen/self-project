@@ -3,6 +3,22 @@
 /***********/
 /* MAIN */
 /***********/
+.demo-inside p {
+    /* box-model */
+    margin: 1em 0;
+}
+
+.position-explain {
+    /* box-model */
+    margin: 1em 2em;
+    padding-top: 0.5em;
+}
+
+.demo-inside ul p {
+    /* box-model */
+    margin: 1em 0 1em 1em;
+}
+
 .position-block {
     /* display */
     width: 6rem;
@@ -21,10 +37,7 @@
     align-items: center;
     text-align: center;
     top: 25em;
-    left: 33em;
-    
-    
-    
+    left: 15em;
 }
 
 .btn-all {
@@ -32,7 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     /* box-model */
-    margin: 1em auto;
+    padding-top: 1em;
 }
 
 .btn {
@@ -78,8 +91,6 @@
     overflow: hidden; */
     /**/
     position: relative;
-    /* box-model */
-    padding: 2em;
 }
 
 .box-click-here {
@@ -89,12 +100,13 @@
     right: 0.5em;
 }
 
+
 /**************************************/
 /* MEDIA QUERIES */
 /************************************/
 
 @media only screen and (max-width: 700px) {
- 
+
     .position-block {
         /* display */
         width: 3rem;
@@ -116,8 +128,14 @@
     }
 
     .block-positionned {
+        /* display */
         top: 25em;
-        left: 10em;
+        left: 8em;
     }
 
+    .position-block:nth-child(5),
+    .position-block:nth-child(6), .position-block:nth-child(7), .position-block:nth-child(8), .position-block:nth-child(9), .position-block:nth-child(10), .position-block:nth-child(11),
+    .position-block:nth-child(12) {
+        display: none;
+    }
 }
