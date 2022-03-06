@@ -14,6 +14,7 @@ let btnSticky = document.getElementsByClassName('btn-sticky')[0];
 // Changes
 let staticChanges = document.getElementsByClassName('block-positionned')[0];
 
+
 // & Create my functions
 
 function staticProperty() {
@@ -23,7 +24,10 @@ function staticProperty() {
     console.log(style.getPropertyValue('--purple'));
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
-    staticChanges.innerHTML = "I'm static";
+    // adding text
+    staticChanges.innerHTML = "Hello, I'm static";
+    // adding padding
+    staticChanges.style.padding = "1em"
     // change the position
     staticChanges.style.position = "static";
 }
@@ -35,7 +39,10 @@ function relativeProperty() {
     console.log(style.getPropertyValue('--purple'));
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
+    // adding text
     staticChanges.innerHTML = "I'm relative";
+    // adding padding
+    staticChanges.style.padding = "1em"
     staticChanges.style.position = "relative";
 }
 
@@ -46,7 +53,10 @@ function absoluteProperty() {
     console.log(style.getPropertyValue('--purple'));
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
+    // adding text
     staticChanges.innerHTML = "I'm absolute";
+    // adding padding
+    staticChanges.style.padding = "1em"
     staticChanges.style.position = "absolute";
 }
 
@@ -57,7 +67,10 @@ function fixedProperty() {
     console.log(style.getPropertyValue('--purple'));
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
+    // adding text
     staticChanges.innerHTML = "I'm fixed";
+    // adding padding
+    staticChanges.style.padding = "1em"
     staticChanges.style.position = "fixed";
 }
 
