@@ -14,6 +14,12 @@
     padding-top: 0.5em;
 }
 
+.demo-inside ul li {
+    /* font-style */
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 .demo-inside ul p {
     /* box-model */
     margin: 1em 0 1em 1em;
@@ -137,5 +143,10 @@
     .position-block:nth-child(6), .position-block:nth-child(7), .position-block:nth-child(8), .position-block:nth-child(9), .position-block:nth-child(10), .position-block:nth-child(11),
     .position-block:nth-child(12) {
         display: none;
+    }
+
+    .position-explain {
+        /* box-model */
+        margin: 0 1em;
     }
 }

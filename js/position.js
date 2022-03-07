@@ -24,7 +24,7 @@ function staticProperty() {
     // create a variable to get the CSS variable
     var style = getComputedStyle(document.body);
     // console for checking that everything is ok
-    console.log(style.getPropertyValue('--purple'));
+    /* console.log(style.getPropertyValue('--purple')); */
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
     // adding text
@@ -46,7 +46,7 @@ function relativeProperty() {
     // create a variable to get the CSS variable
     var style = getComputedStyle(document.body);
     // console for checking that everything is ok
-    console.log(style.getPropertyValue('--purple'));
+    /* console.log(style.getPropertyValue('--purple')); */
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
     // adding text
@@ -68,7 +68,7 @@ function absoluteProperty() {
     // create a variable to get the CSS variable
     var style = getComputedStyle(document.body);
     // console for checking that everything is ok
-    console.log(style.getPropertyValue('--purple'));
+    /* console.log(style.getPropertyValue('--purple')); */
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
     // adding text
@@ -90,7 +90,7 @@ function fixedProperty() {
     // create a variable to get the CSS variable
     var style = getComputedStyle(document.body);
     // console for checking that everything is ok
-    console.log(style.getPropertyValue('--purple'));
+    /* console.log(style.getPropertyValue('--purple')); */
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
     // adding text
@@ -112,7 +112,7 @@ function stickyProperty() {
     // create a variable to get the CSS variable
     var style = getComputedStyle(document.body);
     // console for checking that everything is ok
-    console.log(style.getPropertyValue('--purple'));
+    /* console.log(style.getPropertyValue('--purple')); */
     // change the color of the block
     staticChanges.style.setProperty('--purple', style.getPropertyValue('--clear-blue'));
     // adding text
@@ -130,8 +130,6 @@ function stickyProperty() {
     staticChanges.style.position = "sticky";
 }
 
-
-
 // TODO onclick event
 
 btnStatic.onclick = staticProperty;
@@ -140,4 +138,4 @@ btnAbsolute.onclick = absoluteProperty;
 btnFixed.onclick = fixedProperty;
 btnSticky.onclick = stickyProperty;
 
-// !TEST ZONE
+// !TEST ZONE - Below my test zone

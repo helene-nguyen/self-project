@@ -65,33 +65,7 @@
                                 <p>Click on buttons and you will see below the behavior of my beautiful purple blocks :
                                 </p>
                                 <div class="display">
-                                    <div class="position-explain">
-                                    <p class="display-txt display-title"></p>
-                                    <p class="display-txt">What you have to know about position properties, for each :</p>
-                                        
-                                            <ul>
-                                                <div>
-                                                    <li>Static :</li>
-                                                    <p>Bla bla</p>
-                                                </div>
-                                                <div>
-                                                    <li>Relative :</li>
-                                                    <p>Bla bla</p>
-                                                </div>
-                                                <div>
-                                                    <li>Absolute :</li>
-                                                    <p>Bla bla</p>
-                                                </div>
-                                                <div>
-                                                    <li>Fixed :</li>
-                                                    <p>Bla bla</p>
-                                                </div>
-                                                <div>
-                                                    <li>Sticky :</li>
-                                                    <p>Bla bla</p>
-                                                </div>
-                                            </ul>
-                                        </div>
+
                                     
                                     <!-- Button -->
                                     <div class="btn-all">
@@ -125,6 +99,34 @@
                                         <div class="position-block"></div>
                                         <div class="position-block"></div>
                                     </div>
+
+                                    <div class="position-explain">
+                                        <p class="display-txt display-title"></p>
+                                        <p class="display-txt">What you have to know about position properties, for each :</p>
+                                            
+                                                <ul>
+                                                    <div>
+                                                        <li>Static:</li>
+                                                        <p>HTML elements are positionned by default static. Top, bottom, left and right have no effect.</p>
+                                                    </div>
+                                                    <div>
+                                                        <li>Relative:</li>
+                                                        <p>HTML elements are posiitonned in the normal flow. The offset DOES NOT affect the position of any other elements. The positionned element depends on the starting position.</p>
+                                                    </div>
+                                                    <div>
+                                                        <li>Absolute:</li>
+                                                        <p>HTML elements are removed from the normal flow. Ancestor HAVE TO BE POSITIONNED. They are placed relative to the initial containing block. And they are positionned relative to its CLOSEST positionned ancestor. Margins do not collapse with other.</p>
+                                                    </div>
+                                                    <div>
+                                                        <li>Fixed:</li>
+                                                        <p>HTML elements are positionned relative to its closest positionned ancestor. Works like absolute position. Elements are removed from the normal flow.</p>
+                                                    </div>
+                                                    <div>
+                                                        <li>Sticky:</li>
+                                                        <p>It's a special property of position. I take so much time to make it works. Now, I can share it to you. Be careful about the ancestor, they have to not having the overflow property. Never, ever, never, never !</p>
+                                                    </div>
+                                                </ul>
+                                            </div>
                                 </div>
                             </div>
                         </div>
