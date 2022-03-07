@@ -64,20 +64,23 @@
                                 <p>You can also create forms, there is so many things to do !</p>
                                 <br>
                                 <!-- Here we can make a line break, it's the last I promise, don't like it that much !  -->
-                                <label for="input-box">It's cool isn't it ?</label>
-                                <div class="input-type">
-                                    <input type="checkbox">
-                                    <p>Oh yeah a check box !</p>
-                                </div>
-                                <div class="input-type">
-                                    <input type="radio">
-                                    <p>Oh yeah a radio button !</p>
-                                </div>
-                                <div class="password-type">
-                                    <p class="password-type">Oh yeah I can enter anything, we cannot see !
-                                    </p>
-                                    <input type="password">
-                                </div>
+                                <form action="" method="get">
+                                    <label for="input-box">It's cool isn't it ?</label>
+                                    <div class="input-type">
+                                        <input type="checkbox" name="checkbox">
+                                        <p>Oh yeah a check box !</p>
+                                    </div>
+                                    <div class="input-type">
+                                        <input type="radio" name="radio-btn">
+                                        <p>Oh yeah a radio button !</p>
+                                    </div>
+                                    <div class="password-type">
+                                        <label for="pass-zone">Oh yeah I can enter anything, we cannot see !
+                                        </label>
+                                        <input type="password" id="pass-zone" name="password">
+                                        <input type="submit" value="Submit button" id="submit-btn">
+                                    </div>
+                                </form>
                                 <!-- Button -->
                                 <button class="btn-project">
                                     <a href="https://helene-nguyen.github.io/cv-v1/" target="_blank">My
@@ -105,7 +108,8 @@
                                     <p class="div-bloc-txt">Here, I'm in a box that have borders and you see it because
                                         I want to. <span class="div-bloc-txt-span">Everything in here is modifying in my
                                             CSS file.</span>
-                                        If you want to see more, press F12 and in the Devtools (on PC only), click on Network, F5 for
+                                        If you want to see more, press F12 and in the Devtools (on PC only), click on
+                                        Network, F5 for
                                         refresh and then you'll see my basics.css file.
                                         Click on it, check comments and enjoy !
                                     </p>

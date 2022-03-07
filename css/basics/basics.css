@@ -32,6 +32,30 @@ a {
 .password-type {
     /* display */
     flex-direction: column;
+    width: 40%;
+}
+
+#pass-zone {
+    /* box-model */
+    margin-top: 1em;
+}
+
+#submit-btn {
+    /* font-style */
+    font-family: var(--font-poiret);
+    font-size: 1.5em;
+    font-weight: 600;
+    /* display */
+    display: block;
+    cursor: pointer;
+    /*btn effect*/
+    transition: all 235ms ease-in-out;
+    /* box-model */
+    border-top: 2px solid var(--dark-grey);
+    border-radius: 15px;
+    box-shadow: var(--bloc-box-shadow);
+    padding: 0.5em;
+    margin: 1em auto 1em;
 }
 
 /*******************/
