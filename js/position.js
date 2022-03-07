@@ -11,6 +11,8 @@ let btnRelative = document.getElementsByClassName('btn-relative')[0];
 let btnAbsolute = document.getElementsByClassName('btn-absolute')[0];
 let btnFixed = document.getElementsByClassName('btn-fixed')[0];
 let btnSticky = document.getElementsByClassName('btn-sticky')[0];
+// Bloc ancestor
+let ancestorBlock = document.getElementsByClassName('position-block-demo')[0];
 // Changes
 let staticChanges = document.getElementsByClassName('block-positionned')[0];
 // Media queries
@@ -37,7 +39,7 @@ function staticProperty() {
         staticChanges.style.fontSize = "1em";
     }
     // adding padding
-    staticChanges.style.padding = "1em"
+    staticChanges.style.padding = "1em";
     // change the position
     staticChanges.style.position = "static";
 }
@@ -59,7 +61,10 @@ function relativeProperty() {
         staticChanges.style.fontSize = "1em";
     }
     // adding padding
-    staticChanges.style.padding = "1em"
+    staticChanges.style.padding = "1em";
+    // adding border color ancestor
+    ancestorBlock.style.border = "1px solid";
+    ancestorBlock.style.borderColor = style.getPropertyValue('--red');
     // change the position
     staticChanges.style.position = "relative";
 }
@@ -81,7 +86,10 @@ function absoluteProperty() {
         staticChanges.style.fontSize = "1em";
     }
     // adding padding
-    staticChanges.style.padding = "1em"
+    staticChanges.style.padding = "1em";
+    // adding border color ancestor
+    ancestorBlock.style.border = "1px solid";
+    ancestorBlock.style.borderColor = style.getPropertyValue('--red');
     // change the position
     staticChanges.style.position = "absolute";
 }
@@ -103,7 +111,9 @@ function fixedProperty() {
         staticChanges.style.fontSize = "1em";
     }
     // adding padding
-    staticChanges.style.padding = "1em"
+    staticChanges.style.padding = "1em";
+    // remove border color ancestor
+    ancestorBlock.style.border = "none";
     // change the position
     staticChanges.style.position = "fixed";
 }
@@ -125,7 +135,10 @@ function stickyProperty() {
         staticChanges.style.fontSize = "1em";
     }
     // adding padding
-    staticChanges.style.padding = "1em"
+    staticChanges.style.padding = "1em";
+    // adding border color ancestor
+    ancestorBlock.style.border = "1px solid";
+    ancestorBlock.style.borderColor = style.getPropertyValue('--red');
     // change the position
     staticChanges.style.position = "sticky";
 }
