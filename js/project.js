@@ -5,63 +5,51 @@ console.log("READY ! 🐉");
 const base = {
     //^VARIABLES
     container: document.querySelector('.container'),
-    createDiv: document.createElement('div'),
-    createP: document.createElement('p'),
     //^INIT
     init: function () {
-        console.log(base.container);
+        /* console.log(test); */
+        base.cards();   
+       
     },
     //^FUNCTIONS
-    //~create card
+    //~create a card template
+    cardTemplate: function () {
+        let flipCard = document.createElement('div');
+        flipCard.classList.add('flip-card');
+        base.container.appendChild(flipCard);
 
-    //~create slide 1
-    slide1: function () {
-        //link slide 1
-        let linkSlide1 = document.createElement('a');
-        linkSlide1.classList.add('document');
-        linkSlide1.href = "#"
+        let flipCardInner = document.createElement('div');
+        flipCardInner.classList.add('flip-card-inner');
+        flipCard.appendChild(flipCardInner);
 
-        //slide 1 element
-        let slideElement = base.createDiv;
-        slideElement.classList.add('slide', 'slide1');
-        linkSlide1.appendChild(slideElement);
+        let flipCardFront = document.createElement('div');
+        flipCardFront.classList.add('flip-card-front');
+        flipCardInner.appendChild(flipCardFront);
 
-        //inside slide 1 element
-        let insideSlide1 = base.createDiv;
-        insideSlide1.classList.add('title-box');
-        slideElement.appendChild(insideSlide1);
+        let flipCardBack = document.createElement('div');
+        flipCardBack.classList.add('flip-card-back');
+        flipCardInner.appendChild(flipCardBack); 
 
-        //text and image
-        let txtslide1 = base.createP;
-        txtslide1.classList.add('txt-box');
-        insideSlide1.appendChild(txtslide1);
-
-        let imgSlide1 = document.createElement('img');
-        imgSlide1.classList.add('card-img');
-        insideSlide1.appendChild(imgSlide1);
-        imgSlide1.src = "#"
-        
+        base.hoverCard(flipCard);
+        base.hoverCard(flipCardInner);
     },
-    //~create slide 2
-
-    //create div item inside container
-    //create template card => create inside div class block
-    //create div class card where it will have 2 slides
-    /* for slide 1
-    create a class document a.href =""
-    create div 2 class "slide", "slide1"
-    create div class title-box
-    create p "txt-box" + img class "card-img" 
-    img.src = "https://picsum.photos/200/301";
-    */
-    /*for slide 2
-    create div 2 class "slide", "slide2"
-    create div class txt-slide2
-    create a class basics-link
-    create p 'description'
-    create p
-
-    */
+    //~event on mouseover mouseleave
+    hoverCard: function (element) {
+        element.addEventListener('mouseover', () => {
+            element.classList.add('hovering');
+        });
+        element.addEventListener('mouseleave', () => {
+            element.classList.remove('hovering');
+        });
+    },
+    //~create 12 cards
+    cards: function () {
+        for (let index = 0; index < 12; index++){
+            base.cardTemplate(base.createDiv);
+        }
+    },
+    //~flip card front
 }
 
 base.init();
+

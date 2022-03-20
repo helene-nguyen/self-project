@@ -1,135 +1,62 @@
 /* Yumicode BIG PROJECT 2022*/
 
 /*********/
-/** MAIN **/
+/** ASSETS **/
 /***********/
 
 
 /*********/
 /** CARD **/
 /***********/
-
-.card-zone {
-    /*display*/
-    border-width: thin;
-    height: 27rem;
-    width: 15rem;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
-    /* box-model */
-    margin-bottom: 1em;
-
-}
-
-/*Center div in div*/
-.block {
-    /*display*/
-    height: 5rem;
-    width: 5rem;
-    /**/
-    position: relative;
-    display: flex;
-    /* !!!Centrer horizontalement et verticalement*/
-    justify-content: center;
-    align-items: center;
-    /*box-model*/
-    margin: 11rem auto;
-}
-
-/***** Slide 1 *****/
-.title-box {
-    /*positioning*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    /*display*/
-    font-size: 6rem;
-    background: var(--white);
+.flip-card {
+    /* display */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 15rem;
+    height: 15rem;
+    perspective: 1000px;
+    /* box model */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.txt-box {
-    /* font-style */
-    color: var(--black);
-    font-size: 2rem;
-    background-color: var(--clear-pink);
-    /* box-model */
-    padding: 0.25em 0.5em;
-    margin-bottom: 0.25em;
-}
-
-.card-img {
+.flip-card-inner {
     /* display */
-    width: 0.80em;
-    /* box-model */
-    margin-top: 0.10em;
-}
-
-.card .slide {
-    /* display */
-    width: 12.5rem;
-    height: 12.5rem;
-    transition: 0.5s;
-
-}
-
-/*Hide content*/
-.card .slide.slide1 {
-    /* display */
+    width: 95%;
+    height: 95%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transition: .7s;
-    transform: translateY(100px);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    /* box model */
+    
 }
 
-/*Translate horizontally top*/
-.card:hover .slide.slide1 {
+.hovering {
+    transform: rotateY(180deg);
+  }
+
+.flip-card-front {
     /* display */
-    transform: translateY(0px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--blue-sea);
+    backface-visibility: hidden;
+    /* box model */
+    
 }
 
-/***** Slide 2 *****/
-.card .slide.slide2 {
-    /* font-style */
-    text-align: center;
+.flip-card-back {
     /* display */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /**/
-    position: relative;
-    transition: .8s;
-    transform: translateY(-6.25rem);
-    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.4); 
-    /* box-model */
-    padding: 1.25rem;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: var(--clear-blue);
+    /* box model */
+    
+    
 }
 
-.card:hover .slide.slide2 {
-    /* display */
-    transform: translateY(0);
-}
-
-/***Content inside slide2***/
-.basics-link {
-    /* font-style */
-    color: var(--black);
-    font-size: 2em;
-    font-weight: 600;
-}
-
-.description {
-    /* font-style */
-    font-weight: 600;
-    /* box-model */
-    padding: 1em 0;
-}
